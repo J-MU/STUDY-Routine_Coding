@@ -3,14 +3,55 @@
   <head>
     <title>WEB1-CSS</title>
     <meta charset="utf-8">
+    <style> /*id > class > tag*/
+      #active{ /* id selector priority is stronger than class selector*/
+      color:red;
+      }
+      .saw{
+        color:gray;
+      }
+      a {  /*a = selector*/
+        color: black;            /*  declaration clor: property red: value*/
+        text-decoration: none;  /*declaration text-decoration : property none: value*/
+      }
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        border-color:gray;
+        border-bottom :solid;
+        padding :20px;
+        margin-top:10px;
+        margin-bottom: 0;
+      }
+      h2{
+        weight:800px;
+      }
+      ol{
+        border-right: 1px solid gray;
+        width:150px;
+        margin:0;
+        padding-top:20px;
+      }
+      body{
+        margin:0px;
+      }
+    </style>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
     <ol>
-      <li><a href="html_specification.html">HTML</a></li>
-      <li><a href="css_specification.html">CSS</a></li>
+      <li><a href="html_specification.html" class="saw">HTML</a></li>
+      <li><a href="css_specification.html" class="saw" id="active">CSS</a></li>
       <li><a href="javascript_specification.html">JavaScript</a></li>
     </ol>
+    <!--
+    <h1><a href="index.html"><font color="red">WEB</font></a></h1>
+    <ol>
+      <li><a href="html_specification.html"><font color="red">HTML</font></a></li>
+      <li><a href="css_specification.html"><font color="red">CSS</font></a></li>
+      <li><a href="javascript_specification.html"><font color="red">JavaScript</font></a></li>
+    </ol>
+    -->
     <h2>CSS란 무엇인가</h2>
 
 
